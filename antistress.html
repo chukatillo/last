@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR-Модуль «АнтиСтресс» - FOLIAGE</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="product-page">
+    <!-- Триггер для выдвижной шапки -->
+    <div class="header-trigger"></div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header-top">
+            <div class="phone">+7 (985) 466-72-21</div>
+            <div class="header-controls">
+                <div class="search-container">
+                    <input type="text" placeholder="Поиск..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <button class="lang-switcher" onclick="toggleLanguage()">
+                    <span class="lang-text">EN</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="nav-links">
+                <a href="index.html#main" data-ru="Главная" data-en="Main">Главная</a>
+                <a href="index.html#about" data-ru="О нас" data-en="About">О нас</a>
+                <a href="index.html#products" data-ru="Продукты" data-en="Products">Продукты</a>
+                <a href="index.html#faq" data-ru="Частые вопросы" data-en="FAQ">Частые вопросы</a>
+                <a href="index.html#questions" data-ru="Ваши вопросы" data-en="Contact">Ваши вопросы</a>
+                <a href="index.html#contact" data-ru="Контакты" data-en="Contacts">Контакты</a>
+                <a href="cart.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="container">
+            <!-- Заголовок продукта -->
+            <div class="product-header">
+                <h1 data-ru="VR-Модуль «АнтиСтресс»" data-en="VR Module «AntiStress»">VR-Модуль «АнтиСтресс»</h1>
+                <p class="product-subtitle" data-ru="Иммерсивная VR-терапия для управления стрессом и тревожностью" 
+                   data-en="Immersive VR therapy for stress and anxiety management">
+                   Иммерсивная VR-терапия для управления стрессом и тревожностью
+                </p>
+            </div>
+
+            <!-- Иммерсивные сцены с горизонтальной прокруткой -->
+            <div class="info-section">
+                <h2 data-ru="Иммерсивные сцены" data-en="Immersive Scenes">Иммерсивные сцены</h2>
+                <p data-ru="10 уникальных виртуальных сред, созданных для глубокой релаксации и медитации" 
+                   data-en="10 unique virtual environments created for deep relaxation and meditation">
+                   10 уникальных виртуальных сред, созданных для глубокой релаксации и медитации
+                </p>
+                
+                <div class="scenes-container">
+                    <div class="scenes-track" id="scenes-track">
+                        <!-- Сцена 1 -->
+                        <div class="scene-item">
+                            <div class="scene-image">
+                                <img src="pic/сакура.jpg" alt="Лесная поляна" class="scene-photo">
+                            </div>
+                            <div class="scene-info">
+                                <h3 data-ru="Лесная поляна" data-en="Forest Glade">Лесная поляна</h3>
+                                <p data-ru="Спокойный лес с мягким солнечным светом, пением птиц и шелестом листьев" 
+                                   data-en="Peaceful forest with soft sunlight, birds singing and rustling leaves">
+                                   Спокойный лес с мягким солнечным светом, пением птиц и шелестом листьев
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Сцена 2 -->
+                        <div class="scene-item">
+                            <div class="scene-image">
+                                <img src="pic/мост.jpg" alt="Горное озеро" class="scene-photo">
+                            </div>
+                            <div class="scene-info">
+                                <h3 data-ru="Горное озеро" data-en="Mountain Lake">Горное озеро</h3>
+                                <p data-ru="Кристально чистое озеро в горах с отражением заснеженных вершин" 
+                                   data-en="Crystal clear mountain lake with reflection of snowy peaks">
+                                   Кристально чистое озеро в горах с отражением заснеженных вершин
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Сцена 3 -->
+                        <div class="scene-item">
+                            <div class="scene-image">
+                                <img src="pic/космос.jpg" alt="Ночной космос" class="scene-photo">
+                            </div>
+                            <div class="scene-info">
+                                <h3 data-ru="Ночной космос" data-en="Night Space">Ночной космос</h3>
+                                <p data-ru="Бескрайнее звездное небо с Млечным путем и падающими звездами" 
+                                   data-en="Endless starry sky with Milky Way and shooting stars">
+                                   Бескрайнее звездное небо с Млечным путем и падающими звездами
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Сцена 4 -->
+                        <div class="scene-item">
+                            <div class="scene-image">
+                                <img src="pic/сакура.jpg" alt="Японский сад" class="scene-photo">
+                            </div>
+                            <div class="scene-info">
+                                <h3 data-ru="Японский сад" data-en="Japanese Garden">Японский сад</h3>
+                                <p data-ru="Традиционный японский сад с сакурой, каменными дорожками и тихим ручьем" 
+                                   data-en="Traditional Japanese garden with cherry blossoms, stone paths and quiet stream">
+                                   Традиционный японский сад с сакурой, каменными дорожками и тихим ручьем
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Сцена 5 -->
+                        <div class="scene-item">
+                            <div class="scene-image">
+                                <img src="pic/мальдивы.jpg" alt="Тропический пляж" class="scene-photo">
+                            </div>
+                            <div class="scene-info">
+                                <h3 data-ru="Тропический пляж" data-en="Tropical Beach">Тропический пляж</h3>
+                                <p data-ru="Белый песок, бирюзовое море и звук накатывающих волн" 
+                                   data-en="White sand, turquoise sea and the sound of rolling waves">
+                                   Белый песок, бирюзовое море и звук накатывающих волн
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Навигация для сцен -->
+                <div class="scenes-navigation">
+                    <button class="scene-nav-btn prev-btn" onclick="scrollScenes(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="scene-dots" id="scene-dots">
+                        <!-- Точки навигации будут добавляться через JS -->
+                    </div>
+                    <button class="scene-nav-btn next-btn" onclick="scrollScenes(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Основной контент в двух колонках -->
+            <div class="product-content">
+                <!-- Левая колонка - информация о продукте -->
+                <div class="product-info">
+                    <!-- Основное описание -->
+                    <div class="info-section">
+                        <h2 data-ru="О продукте" data-en="About Product">О продукте</h2>
+                        <p data-ru="VR-модуль «АнтиСтресс» — это инновационное решение для самостоятельной работы со стрессом и тревожностью. Программа основана на научно доказанных методиках когнитивно-поведенческой терапии, mindfulness и биологической обратной связи." 
+                           data-en="VR module «AntiStress» is an innovative solution for independent work with stress and anxiety. The program is based on scientifically proven methods of cognitive behavioral therapy, mindfulness and biofeedback.">
+                           VR-модуль «АнтиСтресс» — это инновационное решение для самостоятельной работы со стрессом и тревожностью. Программа основана на научно доказанных методиках когнитивно-поведенческой терапии, mindfulness и биологической обратной связи.
+                        </p>
+                    </div>
+
+                    <!-- Ключевые особенности -->
+                    <div class="info-section">
+                        <h2 data-ru="Ключевые особенности" data-en="Key Features">Ключевые особенности</h2>
+                        <div class="features-grid compact">
+                            <div class="feature-item">
+                                <i class="fas fa-brain"></i>
+                                <span data-ru="Научные методики" data-en="Scientific methods">Научные методики</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span data-ru="Отслеживание прогресса" data-en="Progress tracking">Отслеживание прогресса</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-user-friends"></i>
+                                <span data-ru="Персонализация" data-en="Personalization">Персонализация</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span data-ru="Кроссплатформенность" data-en="Cross-platform">Кроссплатформенность</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Аудиосессии -->
+                    <div class="info-section">
+                        <h2 data-ru="Аудиосессии с гидом" data-en="Guided Audio Sessions">Аудиосессии с гидом</h2>
+                        <div class="features-grid compact">
+                            <div class="feature-item">
+                                <i class="fas fa-anchor"></i>
+                                <div>
+                                    <strong data-ru="«Дыхание-якорь»" data-en="«Breath Anchor»">«Дыхание-якорь»</strong>
+                                    <p data-ru="Техника заземления" data-en="Grounding technique">Техника заземления</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <strong data-ru="«Сканирование тела»" data-en="«Body Scan»">«Сканирование тела»</strong>
+                                    <p data-ru="Осознание ощущений" data-en="Body awareness">Осознание ощущений</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-home"></i>
+                                <div>
+                                    <strong data-ru="«Внутреннее убежище»" data-en="«Inner Sanctuary»">«Внутреннее убежище»</strong>
+                                    <p data-ru="Безопасное пространство" data-en="Safe space">Безопасное пространство</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-leaf"></i>
+                                <div>
+                                    <strong data-ru="«Лесная медитация»" data-en="«Forest Meditation»">«Лесная медитация»</strong>
+                                    <p data-ru="Погружение в природу" data-en="Nature immersion">Погружение в природу</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Поддерживаемые устройства -->
+                    <div class="info-section">
+                        <h2 data-ru="Поддерживаемые устройства" data-en="Supported Devices">Поддерживаемые устройства</h2>
+                        <div class="features-grid compact">
+                            <div class="feature-item">
+                                <i class="fab fa-glasses"></i>
+                                <span>Oculus Quest</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-headset"></i>
+                                <span>HTC Vive</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-vr-cardboard"></i>
+                                <span>Valve Index</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>iOS & Android</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правая колонка - подписки -->
+                <div class="pricing-section">
+                    <h2 data-ru="Варианты подписки" data-en="Subscription Options">Варианты подписки</h2>
+                    
+                    <div class="pricing-options three-columns">
+                        <!-- Годовая подписка -->
+                        <div class="pricing-option recommended">
+                            <h3 data-ru="Годовая подписка" data-en="Annual Subscription">Годовая подписка</h3>
+                           <div class="price" data-price-rub="15.000" data-price-usd="185">15.000 ₽</div>
+                            <div class="price-old" data-price-rub="18.000" data-price-usd="222">18.000 ₽</div>
+                            <p data-ru="Экономия 3.000 ₽" data-en="Save $37">Экономия 3.000 ₽</p>
+                            <ul>
+                                <li data-ru=" Доступ ко всем функциям" data-en=" All features"> Все функции</li>
+                                <li data-ru=" 10 иммерсивных сцен" data-en=" 10 scenes"> 10 сцен</li>
+                                <li data-ru=" 5 аудиосессий" data-en=" 5 sessions"> 5 сессий</li>
+                                <li data-ru=" Поддержка" data-en=" Support"> Поддержка</li>
+                            </ul>
+                            <button onclick="addToCartAndRedirect('VR-Модуль: АнтиСтресс (годовая)', 15000)" 
+                                    data-ru="В корзину" 
+                                    data-en="Add to Cart">
+                                    В корзину
+                            </button>
+                        </div>
+
+                        <!-- Месячная подписка -->
+                        <div class="pricing-option">
+                            <h3 data-ru="Месячная подписка" data-en="Monthly Subscription">Месячная подписка</h3>
+                            <div class="price" data-price-rub="1.500" data-price-usd="18">1.500 ₽</div>
+                            <p data-ru="Попробуйте перед покупкой" data-en="Try before buying">Попробуйте</p>
+                            <ul>
+                                <li data-ru=" Полный доступ на месяц" data-en=" Full access"> Месяц доступа</li>
+                                <li data-ru= Все 10 сцен" data-en=" All scenes"> Все сцены</li>
+                                <li data-ru= Все аудиосессии" data-en= All sessions"> Все сессии</li>
+                                <li data-ru= Отмена в любой момент" data-en= Cancel anytime"> Можно отменить</li>
+                            </ul>
+                            <button onclick="addToCartAndRedirect('VR-Модуль: АнтиСтресс (месячная)', 1500)" 
+                                    data-ru="В корзину" 
+                                    data-en="Add to Cart">
+                                    В корзину
+                            </button>
+                        </div>
+
+                        <!-- Разовая покупка -->
+                        <div class="pricing-option">
+                            <h3 data-ru="Разовая покупка" data-en="One-time Purchase">Разовая покупка</h3>
+                            <div class="price" data-price-rub="45.000" data-price-usd="555">45.000 ₽</div>
+                            <p data-ru="Постоянный доступ" data-en="Permanent access">Постоянный доступ</p>
+                            <ul>
+                                <li data-ru=" Пожизненный доступ" data-en=" Lifetime access"> Пожизненный доступ</li>
+                                <li data-ru=" Все текущие функции" data-en=" All features"> Все функции</li>
+                                <li data-ru=" Обновления 1 год" data-en=" 1 year updates"> Обновления раз в год</li>
+                                <li data-ru=" Экономия" data-en="• Savings"> Экономия</li>
+                            </ul>
+                            <button onclick="addToCartAndRedirect('VR-Модуль: АнтиСтресс (пожизненная)', 45000)" 
+                                    data-ru="В корзину" 
+                                    data-en="Add to Cart">
+                                    В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="firefly"></div>
+
+    <script src="app.js"></script>
+    <script src="product.js"></script>
+    <script src="scenes.js"></script>
+</body>
+</html>

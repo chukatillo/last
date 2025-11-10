@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindScape - FOLIAGE</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="product-page">
+    <div class="header-trigger"></div>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="phone">+7 (985) 466-72-21</div>
+            <div class="header-controls">
+                <div class="search-container">
+                    <input type="text" placeholder="Поиск..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <button class="lang-switcher" onclick="toggleLanguage()">
+                    <span class="lang-text">EN</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="nav-links">
+                <a href="index.html#main" data-ru="Главная" data-en="Main">Главная</a>
+                <a href="index.html#about" data-ru="О нас" data-en="About">О нас</a>
+                <a href="index.html#products" data-ru="Продукты" data-en="Products">Продукты</a>
+                <a href="index.html#faq" data-ru="Частые вопросы" data-en="FAQ">Частые вопросы</a>
+                <a href="index.html#questions" data-ru="Ваши вопросы" data-en="Contact">Ваши вопросы</a>
+                <a href="index.html#contact" data-ru="Контакты" data-en="Contacts">Контакты</a>
+                <a href="cart.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-header">
+                <h1 data-ru="MindScape – VR-кабинет для психологов" data-en="MindScape – VR Cabinet for Psychologists">MindScape – VR-кабинет для психологов</h1>
+                <p class="product-subtitle" data-ru="Профессиональный инструмент для экспозиционной терапии и работы с тревожными расстройствами" 
+                   data-en="Professional tool for exposure therapy and anxiety disorders treatment">
+                   Профессиональный инструмент для экспозиционной терапии и работы с тревожными расстройствами
+                </p>
+            </div>
+
+            <!-- Терапевтические сцены -->
+            <div class="info-section">
+                <h2 data-ru="Терапевтические сцены" data-en="Therapeutic Scenes">Терапевтические сцены</h2>
+                <p data-ru="Специализированные виртуальные среды для работы с различными типами тревожных расстройств и фобий" 
+                   data-en="Specialized virtual environments for working with various types of anxiety disorders and phobias">
+                   Специализированные виртуальные среды для работы с различными типами тревожных расстройств и фобий
+                </p>
+                
+                <div class="scenes-container">
+                    <div class="scenes-track" id="scenes-track">
+                        <!-- Сцена для агорафобии -->
+                        <div class="scene-item">
+                            <div class="scene-image">
+                                <div class="scene-placeholder">
+                                    <i class="fas fa-city"></i>
+                                    <span data-ru="Открытое пространство" data-en="Open Space">Открытое пространство</span>
+                                </div>
+                            </div>
+                            <div class="scene-info">
+                                <h3 data-ru="Работа с агорафобией" data-en="Agoraphobia Treatment">Работа с агорафобией</h3>
+                                <p data-ru="Постепенная экспозиция к открытым пространствам, торговым центрам, общественному транспорту" 
+                                   data-en="Gradual exposure to open spaces, shopping malls, public transport">
+                                   Постепенная экспозиция к открытым пространствам, торговым центрам, общественному транспорту
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Сцена для социофобии -->
+                        <div class="scene-item">
+                            <div class="scene-image">
+                                <div class="scene-placeholder">
+                                    <i class="fas fa-users"></i>
+                                    <span data-ru="Социальные ситуации" data-en="Social Situations">Социальные ситуации</span>
+                                </div>
+                            </div>
+                            <div class="scene-info">
+                                <h3 data-ru="Социальная фобия" data-en="Social Phobia">Социальная фобия</h3>
+                                <p data-ru="Моделирование публичных выступлений, знакомств, деловых встреч" 
+                                   data-en="Simulation of public speaking, dating, business meetings">
+                                   Моделирование публичных выступлений, знакомств, деловых встреч
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Сцена для акрофобии -->
+                        <div class="scene-item">
+                            <div class="scene-image">
+                                <div class="scene-placeholder">
+                                    <i class="fas fa-mountain"></i>
+                                    <span data-ru="Высотные ситуации" data-en="Height Situations">Высотные ситуации</span>
+                                </div>
+                            </div>
+                            <div class="scene-info">
+                                <h3 data-ru="Акрофобия (боязнь высоты)" data-en="Acrophobia (Fear of Heights)">Акрофобия (боязнь высоты)</h3>
+                                <p data-ru="Контролируемое воздействие высоты: балконы, мосты, смотровые площадки" 
+                                   data-en="Controlled exposure to heights: balconies, bridges, observation decks">
+                                   Контролируемое воздействие высоты: балконы, мосты, смотровые площадки
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Сцена для клаустрофобии -->
+                        <div class="scene-item">
+                            <div class="scene-image">
+                                <div class="scene-placeholder">
+                                    <i class="fas fa-elevator"></i>
+                                    <span data-ru="Закрытые пространства" data-en="Closed Spaces">Закрытые пространства</span>
+                                </div>
+                            </div>
+                            <div class="scene-info">
+                                <h3 data-ru="Клаустрофобия" data-en="Claustrophobia">Клаустрофобия</h3>
+                                <p data-ru="Работа с боязнью замкнутых пространств: лифты, маленькие комнаты" 
+                                   data-en="Working with fear of confined spaces: elevators, small rooms">
+                                   Работа с боязнью замкнутых пространств: лифты, маленькие комнаты
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scenes-navigation">
+                    <button class="scene-nav-btn prev-btn" onclick="scrollScenes(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="scene-dots" id="scene-dots"></div>
+                    <button class="scene-nav-btn next-btn" onclick="scrollScenes(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <!-- Левая колонка - информация о продукте -->
+                <div class="product-info">
+                    <div class="info-section">
+                        <h2 data-ru="О платформе" data-en="About Platform">О платформе</h2>
+                        <p data-ru="MindScape — это инновационная платформа для психологов и психотерапевтов, объединяющая VR-технологии с доказательными методами терапии. Позволяет проводить контролируемые сеансы экспозиционной терапии в безопасной виртуальной среде." 
+                           data-en="MindScape is an innovative platform for psychologists and psychotherapists, combining VR technologies with evidence-based therapy methods. Allows for controlled exposure therapy sessions in a safe virtual environment.">
+                           MindScape — это инновационная платформа для психологов и психотерапевтов, объединяющая VR-технологии с доказательными методами терапии. Позволяет проводить контролируемые сеансы экспозиционной терапии в безопасной виртуальной среде.
+                        </p>
+                    </div>
+
+                    <div class="info-section">
+                        <h2 data-ru="Ключевые возможности" data-en="Key Features">Ключевые возможности</h2>
+                        <div class="features-grid compact">
+                            <div class="feature-item">
+                                <i class="fas fa-clinic-medical"></i>
+                                <span data-ru="Экспозиционная терапия" data-en="Exposure therapy">Экспозиционная терапия</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <span data-ru="Мониторинг показателей" data-en="Physiological monitoring">Мониторинг показателей</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-user-md"></i>
+                                <span data-ru="Контроль врача" data-en="Doctor control">Контроль врача</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tasks"></i>
+                                <span data-ru="Домашние задания" data-en="Homework system">Домашние задания</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2 data-ru="Для каких расстройств" data-en="Suitable Disorders">Для каких расстройств</h2>
+                        <div class="features-grid compact">
+                            <div class="feature-item">
+                                <i class="fas fa-brain"></i>
+                                <span data-ru="Тревожные расстройства" data-en="Anxiety disorders">Тревожные расстройства</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-spider"></i>
+                                <span data-ru="Фобии и страхи" data-en="Phobias and fears">Фобии и страхи</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-head-side-virus"></i>
+                                <span data-ru="ПТСР" data-en="PTSD">ПТСР</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-redo"></i>
+                                <span data-ru="ОКР" data-en="OCD">ОКР</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правая колонка - подписки -->
+                <div class="pricing-section">
+                    <h2 data-ru="Варианты подписки" data-en="Purchase Options">Варианты приобретения</h2>
+                    
+                    <div class="pricing-options two-columns">
+                        <!-- Версия для клиник -->
+                        <div class="pricing-option recommended">
+                            <h3 data-ru="Базовая версия" data-en="Basic Version">Базовая версия</h3>
+                            <div class="price" data-price-rub="575.000" data-price-usd="7.098">575.000 ₽</div>
+                            <p data-ru="Для клиник и центров" data-en="For clinics and centers">Для клиник и центров</p>
+                            <ul>
+                                <li data-ru=" Неограниченные пациенты" data-en=" Unlimited patients"> Неограниченное количество пациентов</li>
+                                <li data-ru=" Расширенная аналитика" data-en=" Extended analytics"> Расширенная аналитика</li>
+                                <li data-ru=" Приоритетная поддержка" data-en=" Priority support"> Приоритетная поддержка</li>
+                                <li data-ru=" Интеграция с МИС" data-en=" MIS integration"> Интеграция с МИС</li>
+                            </ul>
+                            <div class="subscription-note">
+                                <span data-ru="Годовая подписка:" data-en="Annual subscription:">Подписка:</span>
+                                <div class="price-sub" data-price-rub="100.000" data-price-usd="1.234">100.000 ₽/год</div>
+                            </div>
+                            <button onclick="addToCartAndRedirect('MindScape (Базовая версия)', 575000)" 
+                                    data-ru="В корзину" 
+                                    data-en="Add to Cart">
+                                    В корзину
+                            </button>
+                        </div>
+
+                        <!-- Версия для частных специалистов -->
+                        <div class="pricing-option">
+                            <h3 data-ru="Версия для специалиста" data-en="Specialist Version">Версия для специалиста</h3>
+                            <div class="price" data-price-rub="175.000" data-price-usd="2.160">175.000 ₽</div>
+                            <p data-ru="Для частных психологов" data-en="For private psychologists">Для частных психологов</p>
+                            <ul>
+                                <li data-ru=" До 10 пациентов" data-en="• Up to 10 patients"> До 10 пациентов</li>
+                                <li data-ru=" Базовая аналитика" data-en="• Basic analytics"> Аналитика</li>
+                                <li data-ru=" Техподдержка" data-en=" Technical support"> Техподдержка</li>
+                                <li data-ru=" Домашние задания" data-en="• Homework system"> Домашние задания</li>
+                            </ul>
+                            <div class="subscription-note">
+                                <span data-ru="Годовая подписка:" data-en="Annual subscription:">Подписка:</span>
+                                <div class="price-sub" data-price-rub="35.000" data-price-usd="432">35.000 ₽/год</div>
+                            </div>
+                            <button onclick="addToCartAndRedirect('MindScape (Версия для специалиста)', 175000)" 
+                                    data-ru="В корзину" 
+                                    data-en="Add to Cart">
+                                    В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="firefly"></div>
+
+    <script src="app.js"></script>
+    <script src="product.js"></script>
+    <script src="scenes.js"></script>
+</body>
+</html>

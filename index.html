@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOLIAGE - VR/AR Meditation</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Триггер для выдвижной шапки -->
+    <div class="header-trigger"></div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header-top">
+            <div class="phone">+7 (985) 466-72-21</div>
+            <div class="header-controls">
+                <div class="search-container">
+                    <input type="text" placeholder="Поиск..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <button class="lang-switcher" onclick="toggleLanguage()">
+                    <span class="lang-text">EN</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="nav-links">
+                <a href="#main" data-ru="Главная" data-en="Main">Главная</a>
+                <a href="#about" data-ru="О нас" data-en="About">О нас</a>
+                <a href="#products" data-ru="Продукты" data-en="Products">Продукты</a>
+                <a href="#faq" data-ru="Частые вопросы" data-en="FAQ">Частые вопросы</a>
+                <a href="#questions" data-ru="Ваши вопросы" data-en="Contact">Ваши вопросы</a>
+                <a href="#contact" data-ru="Контакты" data-en="Contacts">Контакты</a>
+                <a href="cart.html" class="cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Главный экран -->
+    <section id="main" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">FOLIAGE</h1>
+            <p class="hero-subtitle" data-ru="Иммерсивная VR-медитация для ментального здоровья" 
+               data-en="Immersive VR meditation for mental health">
+               Иммерсивная VR-медитация для ментального здоровья
+            </p>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 data-ru="О НАС" data-en="ABOUT US">О НАС</h2>
+            <p data-ru="Мы создаем инновационные VR-решения для управления стрессом и психотерапии, объединяя передовые технологии с научно обоснованными методиками." 
+               data-en="We create innovative VR solutions for stress management and psychotherapy, combining cutting-edge technologies with evidence-based methods.">
+               Мы создаем инновационные VR-решения для управления стрессом и психотерапии, объединяя передовые технологии с научно обоснованными методиками.
+            </p>
+        </div>
+    </section>
+
+<!-- Продукты -->
+<section id="products" class="products">
+    <h2 data-ru="Наши продукты" data-en="OUR PRODUCTS">Наши продукты</h2>
+    
+    <div class="product-category">
+        <div class="products-grid">
+            
+            <div class="product-card" onclick="window.location.href='antistress.html'">
+                <div class="product-icon">🧘‍♂️</div>
+                <h3 data-ru="VR-Модуль: АнтиСтресс" data-en="VR Module: AntiStress">VR-Модуль: АнтиСтресс</h3>
+                <p data-ru="Подписка для частных пользователей" 
+                   data-en="Subscription for individual users">
+                   Подписка для частных пользователей
+                </p>
+                <div class="product-features">
+                    <span data-ru="• 10 иммерсивных сцен" data-en="• 10 immersive scenes">• 10 иммерсивных сцен</span>
+                    <span data-ru="• 5 аудиосессий с гидом" data-en="• 5 guided audio sessions">• 5 аудиосессий с гидом</span>
+                    <span data-ru="• Поддержка Oculus Quest, HTC Vive" data-en="• Oculus Quest, HTC Vive support">• Поддержка Oculus Quest, HTC Vive</span>
+                    <span data-ru="• Снижение тревожности на 40%" data-en="• 40% anxiety reduction">• Снижение тревожности на 40%</span>
+                </div>
+                <div class="product-price">
+                    <div class="price-main">1.500 ₽/мес</div>
+                    <div class="price-old">или 15.000 ₽/год</div>
+                    <div class="price-sub">Экономия 3.000 ₽</div>
+                </div>
+                <button data-ru="Подробнее" data-en="Learn More">Подробнее</button>
+            </div>
+
+            <div class="product-card" onclick="window.location.href='mindspace.html'">
+                <div class="product-icon">🏥</div>
+                <h3 data-ru="MindScape" data-en="MindScape">MindScape</h3>
+                <p data-ru="Психотерапевтический кабинет для специалистов" 
+                   data-en="Psychotherapeutic cabinet for professionals">
+                   Психотерапевтический кабинет для специалистов
+                </p>
+                <div class="product-features">
+                    <span data-ru="• Экспозиционная терапия" data-en="• Exposure therapy">• Экспозиционная терапия</span>
+                    <span data-ru="• Мониторинг пациентов" data-en="• Patient monitoring">• Мониторинг пациентов</span>
+                    <span data-ru="• Система домашних заданий" data-en="• Homework system">• Система домашних заданий</span>
+                    <span data-ru="• Профессиональная аналитика" data-en="• Professional analytics">• Профессиональная аналитика</span>
+                </div>
+                <div class="product-price">
+                    <div class="price-main">от 175.000 ₽</div>
+                    <div class="price-sub">+ годовая подписка</div>
+                </div>
+                <button data-ru="Подробнее" data-en="Learn More">Подробнее</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 data-ru="Частые вопросы" data-en="FREQUENTLY ASKED QUESTIONS">Частые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" data-ru="Нужно ли специальное оборудование?" 
+                         data-en="Do I need special equipment?">
+                         Нужно ли специальное оборудование?
+                    </div>
+                    <div class="faq-answer" data-ru="Для полного погружения рекомендуем VR-очки, но базовые функции доступны на смартфоне и компьютере." 
+                         data-en="For full immersion we recommend VR headsets, but basic functions are available on smartphones and computers.">
+                         Для полного погружения рекомендуем VR-очки, но базовые функции доступны на смартфоне и компьютере.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-ru="Можно ли отменить подписку?" 
+                         data-en="Can I cancel my subscription?">
+                         Можно ли отменить подписку?
+                    </div>
+                    <div class="faq-answer" data-ru="Да, подписку можно отменить в любой момент в личном кабинете без дополнительных комиссий." 
+                         data-en="Yes, you can cancel your subscription at any time in your personal account without additional fees.">
+                         Да, подписку можно отменить в любой момент в личном кабинете без дополнительных комиссий.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-ru="Есть ли пробный период?" 
+                         data-en="Is there a trial period?">
+                         Есть ли пробный период?
+                    </div>
+                    <div class="faq-answer" data-ru="Предоставляем 7-дневный пробный период для ознакомления со всеми функциями платформы." 
+                         data-en="We provide a 7-day trial period to explore all platform features.">
+                         Предоставляем 7-дневный пробный период для ознакомления со всеми функциями платформы.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="questions" class="questions">
+        <div class="container">
+            <h2 data-ru="Ваши вопросы" data-en="YOUR QUESTIONS">Ваши вопросы</h2>
+            <form class="question-form">
+                <input type="text" placeholder="Ваше имя" data-ru-placeholder="Ваше имя" data-en-placeholder="Your Name" required>
+                <input type="email" placeholder="Ваш email" data-ru-placeholder="Ваш email" data-en-placeholder="Your Email" required>
+                <textarea placeholder="Ваш вопрос или сообщение" data-ru-placeholder="Ваш вопрос или сообщение" data-en-placeholder="Your question or message" rows="5" required></textarea>
+                <button type="submit" data-ru="Отправить вопрос" data-en="Send Question">Отправить вопрос</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-ru="Контакты" data-en="CONTACTS">Контакты</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span data-ru="Москва, Коломенская ул., 11/2" data-en="Moscow, Kolomenskaya st., 11/2">Москва, Коломенская ул., 11/2</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+7 (985) 466-72-21</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>foliage@mail.ru</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+    <div class="firefly"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

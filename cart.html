@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - FOLIAGE</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="cart-page">
+    <!-- Триггер для выдвижной шапки -->
+    <div class="header-trigger"></div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header-top">
+            <div class="phone">+7 (985) 466-72-21</div>
+            <div class="header-controls">
+                <div class="search-container">
+                    <input type="text" placeholder="Поиск..." class="search-input" 
+                           data-ru-placeholder="Поиск..." data-en-placeholder="Search...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <button class="lang-switcher" onclick="toggleLanguage()">
+                    <span class="lang-text">EN</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="nav-links">
+                <a href="index.html#about" data-ru="О нас" data-en="About">О нас</a>
+                <a href="index.html#products" data-ru="Каталог" data-en="Catalog">Каталог</a>
+                <a href="index.html#faq" data-ru="Частые вопросы" data-en="FAQ">Частые вопросы</a>
+                <a href="index.html#contact" data-ru="Контакты" data-en="Contacts">Контакты</a>
+                <a href="cart.html" class="cart-link active">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Корзина -->
+    <section class="cart-section">
+        <div class="container">
+            <h1 data-ru="Корзина" data-en="Cart">Корзина</h1>
+            <div class="cart-content">
+                <div class="cart-items" id="cart-items">
+                    <!-- Товары будут добавляться через JavaScript -->
+                </div>
+                <div class="cart-summary">
+                    <div class="summary-item">
+                        <span data-ru="Итого:" data-en="Subtotal:">Итого:</span>
+                        <span id="cart-total">0 ₽</span>
+                    </div>
+                    <div class="summary-item">
+                        <span data-ru="Скидка:" data-en="Discount:">Скидка:</span>
+                        <span>0 ₽</span>
+                    </div>
+                    <div class="summary-total">
+                        <span data-ru="К оплате:" data-en="Total:">К оплате:</span>
+                        <span id="cart-final">0 ₽</span>
+                    </div>
+                    <button class="checkout-btn" data-ru="Оформить заказ" data-en="Checkout">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <p data-ru="© 2025 FOLIAGE" data-en="© 2025 FOLIAGE">© 2025 FOLIAGE</p>
+    </footer>
+
+    <!-- Курсор-светлячок -->
+    <div class="firefly"></div>
+
+    <script src="app.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
